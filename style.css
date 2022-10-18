@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(64, 79, 152);
+}
+
+#logo {
+  margin-inline: 32px;
+  margin-top: 10px;
+}
+
+#logo h1 {
+  font-weight: bolder;
+  color: rgb(235, 249, 249);
+  font-size: 50px;
+}
+
+#logo span {
+  color: cornflowerblue;
+  font-style: italic;
+  font-size: 50px;
+  border-radius: 10px;
+  padding-inline: 8px;
+  background-color: black;
+  background-size: clip;
+  margin-inline: 2px;
+}
+
+.hero {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__heading {
+  color: rgb(235, 249, 249);
+  font-size: 42px;
+}
+
+.hero__description {
+  color: rgb(231, 240, 255);
+  text-align: center;
+  font-size: 20px;
+  max-width: 800px;
+  line-height: 28px;
+}
+
+.address-book {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.address-book__title {
+  color: rgb(235, 249, 249);
+  font-size: 28px;
+}
+
+.contacts-container {
+  background-color: rgb(235, 249, 249);
+  width: 550px;
+  color: rgb(20, 19, 19);
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+.contact-name {
+  color: rgb(60, 77, 166);
+}
+
+.contact-phone {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.view-more {
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: rgb(60, 77, 166);
+  cursor: pointer;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-more-info {
+  display: none;
+}
+
+.single-contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  gap: 4px;
+  padding-inline: 22px;
+}
+
+.single-contact-container:hover {
+  background-color: rgb(222, 240, 255);
+}
+
+.address-book__button {
+  padding-inline: 50px;
+  padding-top: 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid white;
+  background-color: rgb(60, 77, 166);
+  padding-bottom: 16px;
+}
+
+.more-info-visible {
+  display: block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  margin-inline: auto; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+.modal__form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(232, 244, 255);
+  padding: 20px;
+  border-radius: 20px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.modal__input {
+  padding: 14px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 6px 17px -14px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal__button {
+  margin-top: 14px;
+  padding-inline: 50px;
+  padding-top: 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid white;
+  background-color: rgb(60, 77, 166);
+  padding-bottom: 16px;
+}
+
+.modal__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal__form-title {
+  font-size: 24px;
+  align-self: center;
+}
+
+.modal__close-button {
+  width: 28px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  margin-right: 16px;
+}
+
+.modal__visible {
+  display: block;
+}
